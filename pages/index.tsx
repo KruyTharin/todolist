@@ -1,4 +1,4 @@
-import TodoForm from "@/components/TodoFrom";
+import TodoForm from "@/components/TodoForm";
 import TodoList from "@/components/TodoList";
 import FilterContextProvider from "@/context/FilterContext";
 import SearchTermContextProvider from "@/context/SearchTermConText";
