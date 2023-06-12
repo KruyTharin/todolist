@@ -28,6 +28,7 @@ const useSubmitTodo = () => {
       await updateDoc(docRef, todoUpdated);
       setTodo({ todo: "", id: "" });
       setSearchTerm("");
+      alert(`Todo ${docRef.id} is added`);
     } else {
       //input
       const collectionRef = collection(db, "todos");
@@ -37,7 +38,7 @@ const useSubmitTodo = () => {
       });
       setTodo({ todo: "", id: "" });
       setSearchTerm("");
-      alert(`Todo ${docRef.id} is added`);
+      alert(`Todo ${docRef.id} is updated`);
     }
   };
 
